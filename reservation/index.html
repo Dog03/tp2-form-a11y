@@ -22,51 +22,187 @@
                 <li class="menu__lien">
                     <a href="../index.html">Accueil</a>
                 </li>
-            </ul>  
+            </ul>
             <ul class="menu__liste">
                 <li class="menu__lien">
                     <a href="index.html"> Historique</a>
                 </li>
-            </ul> 
+            </ul>
             <ul class="menu__liste">
                 <li class="menu__lien">
                     <a href="index.html"> Région</a>
                 </li>
-            </ul> 
+            </ul>
             <ul class="menu__liste">
                 <li class="menu__lien">
                     <a href="index.html"> Contact</a>
                 </li>
-            </ul> 
+            </ul>
             <ul class="menu__liste">
                 <li class="menu__lien">
                     <a href="index.html"> Réservation</a>
                 </li>
-            </ul> 
+            </ul>
     </header>
 
     <main>
         <h1>Réservation</h1>
         <form id="reservation-form" action="reservation.html">
             <fieldset class="form-section">
-                <legend><h2>1. Vérifier la disponibilité</h2></legend>
-                <label for="date-arrivee">Date d'arrivée :</label>
-                <input type="date" id="date-arrivee" name="date-arrivee">
+                <legend>
+                    <h2>1. Vérifier la disponibilité</h2>
+                </legend>
+                <div class="disponibilité__dates">
+                    <fieldset>
+                        <legend>
+                            <h3>Date d'arrivée</h3>
+                        </legend>
+                        <div class="disponibilité__date">
+                            <p>
+                                <select id="jour-arrivee" name="jour-arrivee">
+                                    <option label="jour"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            
+                            
+                                <select id="mois-arrivee" name="mois-arrivee">
+                                    <option label="mois"></option>
+                                    <option value="janvier">janvier</option>
+                                    <option value="fevrier">février</option>
+                                    <option value="mars">mars</option>
+                                    <option value="avril">avril</option>
+                                    <option value="mai">mai</option>
+                                    <option value="juin">juin</option>
+                                    <option value="juillet">juillet</option>
+                                    <option value="aout">août</option>
+                                    <option value="septembre">septembre</option>
+                                    <option value="octobre">octobre</option>
+                                    <option value="novembre">novembre</option>
+                                    <option value="decembre">décembre</option>
+                                </select>
+                            
+                                <select id="annee-arrivee" name="annee-arrivee">
+                                    <option label="année"></option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                </select>
+                            </p>
+                        </div>
+                    </fieldset>
 
-                <label for="date-depart">Date de départ :</label>
-                <input type="date" id="date-depart" name="date-depart">
+
+                    <fieldset>
+                        <legend>
+                            <h3>Date de départ</h3>
+                        </legend>
+                        <div class="disponibilité__date">
+                            <p>
+                                <select id="jour-depart" name="jour-depart">
+                                    <option label="jour"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            
+                            
+                                <select id="mois-depart" name="mois-depart">
+                                    <option label="mois"></option>
+                                    <option value="janvier">janvier</option>
+                                    <option value="fevrier">février</option>
+                                    <option value="mars">mars</option>
+                                    <option value="avril">avril</option>
+                                    <option value="mai">mai</option>
+                                    <option value="juin">juin</option>
+                                    <option value="juillet">juillet</option>
+                                    <option value="aout">août</option>
+                                    <option value="septembre">septembre</option>
+                                    <option value="octobre">octobre</option>
+                                    <option value="novembre">novembre</option>
+                                    <option value="decembre">décembre</option>
+                                </select>
+                            
+                                <select id="annee-depart" name="annee-depart">
+                                    <option label="année"></option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                </select>
+                            </p>
+                        </div>
+                    </fieldset>
+                </div>
+
 
                 <button type="button" id="check-availability-button">Vérifier la disponibilité</button>
                 <p id="availability-message"></p>
             </fieldset>
 
             <fieldset class="form-section">
-                <legend><h2>2. Nombre de personnes </h2></legend>
+                <legend>
+                    <h2>2. Nombre de personnes </h2>
+                </legend>
                 <label>Adultes (maximum 4):</label>
-                <input id="adultes" name="adultes">
+                <input id="adultes" name="adultes" type="number" max="4" min="0">
 
                 <label>Enfants (maximum 5):</label>
-                <input id="enfants" name="enfants">
+                <input id="enfants" name="enfants" type="number" max="5" min="0">
 
                 <p>
                     Notes: <br>
@@ -76,10 +212,20 @@
             </fieldset>
 
             <fieldset class="form-section">
-                <legend><h2>3. Choix chambre et forfait </h2></legend>
+                <legend>
+                    <h2>3. Choix chambre et forfait </h2>
+                </legend>
 
                 <!-- Trois boutons radio pour le choix du type de chambre simple, double ou familiale 
                 Les boutons doivent être des images cliquables: utiliser images/types-de-chambre -->
+
+
+                <input id="simple" name="image" type="radio">
+                <label>Chambre simple</label>
+                <input id="double" name="image" type="radio">
+                <label>Chambre simple</label>
+                <input id="familiale" name="image" type="radio">
+                <label>Chambre simple</label>
 
                 <!-- [case à cocher] Inclure le petit déjeuner s'il-vous-plaît -->
 
@@ -87,21 +233,23 @@
                     12.50$
                     CAN.</p>
 
-                </fieldset>
+            </fieldset>
 
             <fieldset class="form-section">
-                <legend><h2>4. Identification</h2></legend>
+                <legend>
+                    <h2>4. Identification</h2>
+                </legend>
                 <label>Prénom :</label>
-                <input id="prenom" name="prenom">
+                <input id="prenom" name="prenom" type="text">
 
                 <label>Nom :</label>
-                <input id="nom" name="nom">
+                <input id="nom" name="nom" type="text">
 
                 <label>Email :</label>
-                <input id="email" name="email">
+                <input id="email" name="email" type="email">
 
                 <label>Téléphone :</label>
-                <input id="telephone" name="telephone">
+                <input id="telephone" name="telephone" type="tel">
 
             </fieldset>
 
@@ -125,7 +273,8 @@
         <!-- Intégrer les medias sociaux instagram et facebook + un bouton pour partager cette page -->
         <p>
             Ce site Web est un projet pédagogique réalisé par
-            <a href="">Mathieu Beauregard</a> et <a href="">Prénom et Nom</a> dans le cadre du cours 582-204-SF Intégration
+            <a href="">Mathieu Beauregard</a> et <a href="">Prénom et Nom</a> dans le cadre du cours 582-204-SF
+            Intégration
             II,
             programme des <a href="">Techniques d'intégration multimédia</a>,
             <a href="">Cégep de Sainte-Foy</a>.
