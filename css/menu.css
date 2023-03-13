@@ -1,5 +1,127 @@
-.menu__liste {
-    list-style:none;
-    max-height:none;
+/**
+ * TABLE DES MATIÈRES
+
+ * - Bouton du menu
+ * - Liste du menu
+ * - Liens du menu
+
+
+/****** Base commune *******/
+
+/* Bouton du menu */
+.nav__control {
+    background-color: var(--couleur-bouton);
+    border: none;
+    padding: 10px;
+    min-width: 80px;
+    min-height:60px;
+    float: right;
+    color:#fff
+}
+
+@media (min-width: 600px) {
+    .nav__control {
+        display: none;
+    }
+}
+
+.nav__control:hover,
+.nav__control:active {
+    background-color: var(--nav-hover-background-color);
+}
+
+.nav__control:focus {
     
+    outline: none;
+    outline-offset: -5px;
+    outline: var(--nav-background-color) auto 5px;
+}
+
+/* Liste du menu */
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-height: none;
+    clear: both;
+}
+
+@media (min-width: 600px) {
+    .nav__list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .nav__list-item {
+        display: inline-block;
+        flex-basis: 20%;
+        margin: 0 0.5rem;
+        text-align: center;
+    }
+}
+
+/* Liens du menu */
+.nav__link {
+    color: var(--nav-color);
+    background-color: #fda92ba8;
+    display: block;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.nav__link:link,
+.nav__link:visited {
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: #fff;
+    background-color: var(--nav-hover-background-color);
+}
+
+.nav__link:active {
+    color: #fff;
+    background-color: #F16767;
+}
+
+
+.nav__link:focus {
+    outline-offset: -5px;
+    outline: var(--nav-background-color) auto 5px;
+    box-shadow: none;
+}
+
+@media (min-width: 600px) {
+    .nav__link:focus {
+        outline-offset: 0;
+    }
+}
+
+
+.nav__link--active {
+    border-left: 5px solid var(--nav-border-color);
+}
+
+@media (min-width: 600px) {
+    .nav__link--active {
+        border-left: none;
+        border-bottom: 5px solid var(--nav-border-color);
+    }
+}
+
+
+
+@media (max-width: 599px) {
+    .js .nav__list {
+        max-height: 100vh;
+        overflow: hidden;
+        transition: max-height 2s;
+    }
+
+    .js .nav--closed .nav__list {
+        max-height: 0;
+        transition: max-height 0.5s;
+    }
 }

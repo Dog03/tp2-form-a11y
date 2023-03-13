@@ -21,6 +21,10 @@
  * point de rupture: 800px
  *
  * Écran large : 800px et +
+ *
+ * Google fonts
+ * font-family: 'Nunito', sans-serif;
+ * font-family: 'Oswald', sans-serif;
  */
 
 
@@ -40,12 +44,12 @@ h3,
 .h3,
 h4,
 .h4 {
-    font-family: 'News Cycle', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 700;
 }
 
 body {
-    font-family: 'News Cycle', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 

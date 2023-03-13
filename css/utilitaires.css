@@ -4,11 +4,18 @@
 /****** Variables (peuvent être utilisées dans tous les fichiers) *******/
 :root {
     --couleur-texte: #022b50;
-    --couleur-titres-h1-h3: darkmagenta;
-    --couleur-dominante: darkmagenta;
-    --couleur-secondaire: #418cff;
-    --bg-couleur-contraste:#efefef;
     --box-shadow:5px 5px 5px;
+
+    --couleur-bouton : #F16767;
+    --couleur-bouton-hover: #c76969;
+
+    --nav-hover-background-color: #F16767;
+    --nav-background-color:grey;
+    --nav-color:black;
+    --nav-border-color:#A459D1;
+    --couleur-form:lightgrey;
+    
+    
 }
 
 /*** Clearfix ***/
