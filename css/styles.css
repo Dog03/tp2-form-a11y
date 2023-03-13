@@ -5,9 +5,28 @@
 @import url(typo.css);
 @import url(grille.css);
 @import url(menu.css);
-@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Nunito&family=Oswald&display=swap');
-/*menu*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Nunito&family=Oswald&display=swap');
 
+/* Signature du site*/
+
+
+
+.img__jacana{
+    margin-bottom: 2rem;
+    width:20%;
+}
+.titre{
+    text-decoration: underline overline solid var(--nav-border-color);  
+    width:60%;
+    text-transform:uppercase;
+    font-weight:bold;
+    vertical-align:middle;
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+/*menu*/
 .menu__ul{
     margin: 0;
     padding: 0;
@@ -43,9 +62,10 @@
 body{
     background-color:#F5EAEA;
 }
+
   header,
 footer {
-    background-color:#dacdcd;
+    background-color:#f5dddd;
     margin: -1.5rem -2rem;
     padding: 2rem 2rem;
 }
@@ -319,5 +339,22 @@ button:focus {
 }
 
 .icone--erreur {
-    background-position: 101px 0;
+    background-position: 101px 0;   
+}
+/*focus*/
+input:focus,
+textarea:focus,
+keygen:focus,
+select:focus {
+    outline-offset: 3px;
+}
+
+:focus {
+    outline:none;
+
+    box-shadow: 2px 2px 1px 1px #A459D1;        
+}
+
+button:focus {
+    outline: 4px solid #A459D1;     
 }
