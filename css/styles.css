@@ -174,6 +174,9 @@ form button:hover {
     margin-top: 2rem;
   
 }
+/* Nombre de personnes */
+
+
 
 /* choix de chambre*/
 .prix {
@@ -230,8 +233,58 @@ form button:hover {
     display: inline-block;
 
 }
-.dejeuner{
-    border: 0px;
-    width: 100%;
-    height: 2em;
+.check-dejeuner{
+    width: 20px;
+    height: 20px;
+}
+
+/* Identification */
+.identification label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Styler le focus */
+/* https://css-tricks.com/having-a-little-fun-with-custom-focus-styles/ */
+input:focus,
+textarea:focus,
+keygen:focus,
+select:focus {
+    outline-offset: 3px;
+}
+
+:focus {
+    /* outline: 5px auto purple; */
+    outline: none;
+    box-shadow: 2px 2px 1px 1px lightskyblue;
+}
+
+button:focus {
+    box-shadow: var(--bouton-box-shadow);
+}
+/* Gestion des erreurs */
+.erreur {
+    /* display: none; */
+}
+
+.icone {
+    display: inline-block;
+    width: 26px;
+    height: 24px;
+    background-image: url("../images/icones/good-warning-error.png");
+    background-size: cover;
+    position: relative;
+    top: 5px;
+}
+
+.icone--ok {
+    background-position: 0 0;
+}
+
+.icone--avertissement {
+    background-position: 49px 0;
+}
+
+.icone--erreur {
+    background-position: 101px 0;
 }
